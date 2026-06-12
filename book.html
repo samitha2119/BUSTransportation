@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Sashi Bus Transportation - Book Tickets</title>
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><span>BUS </span>Transportation</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="book.html">book</a>
+        <a href="categories.html">categories</a>
+        <a href="services.html">services</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search routes or services...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!-- header section ends -->
+
+<!-- login form container  -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>passenger login</h3>
+        <input type="email" class="box" placeholder="enter your email" required>
+        <input type="password" class="box" placeholder="enter your password" required>
+        <input type="submit" value="login now" class="btn gradient-btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- book section starts  -->
+<section class="book" id="book">
+    <div class="head">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+    </div>
+        
+    <div class="booking-wizard-container">
+        <!-- Wizard Progress Bar -->
+        <div class="wizard-progress">
+            <div class="progress-step active">
+                <div class="step-icon"><i class="fas fa-route"></i></div>
+                <div class="step-label">Route</div>
+            </div>
+            <div class="progress-step">
+                <div class="step-icon"><i class="fas fa-couch"></i></div>
+                <div class="step-label">Seats</div>
+            </div>
+            <div class="progress-step">
+                <div class="step-icon"><i class="fas fa-address-card"></i></div>
+                <div class="step-label">Checkout</div>
+            </div>
+            <div class="progress-step">
+                <div class="step-icon"><i class="fas fa-ticket-alt"></i></div>
+                <div class="step-label">Ticket</div>
+            </div>
+        </div>
+
+        <!-- Wizard Form -->
+        <form id="booking-wizard-form" onsubmit="return false;">
+            
+            <!-- STEP 1: ROUTE SELECTION -->
+            <div class="wizard-step active">
+                <h2>Select Your Journey Details</h2>
+                <p class="subtitle">Tell us where and when you'd like to travel</p>
+                
+                <div class="wizard-grid-2">
+                    <div class="wizard-form-group">
+                        <label for="from-location">From (Origin)</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <select id="from-location" required>
+                                <option value="" disabled selected>Select Origin</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Jaffna">Jaffna</option>
+                                <option value="Mathugama">Mathugama</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="to-location">To (Destination)</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-marker"></i>
+                            <select id="to-location" required>
+                                <option value="" disabled selected>Select Destination</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Jaffna">Jaffna</option>
+                                <option value="Mathugama">Mathugama</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="departure-date">Travel Date</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar-day"></i>
+                            <input type="date" id="departure-date" required>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="bus-type">Service Category</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-bus-alt"></i>
+                            <select id="bus-type" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="Luxury A/C Coach">Luxury A/C Coach (LKR 1,500/seat)</option>
+                                <option value="Semi-Luxury Non-A/C Bus">Semi-Luxury Non-A/C Bus (LKR 1,000/seat)</option>
+                                <option value="Premium Rosa Minibus">Premium Rosa Minibus (LKR 2,000/seat)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-actions">
+                    <button class="btn gradient-btn btn-next">Next Step <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 2: SEAT SELECTION -->
+            <div class="wizard-step">
+                <h2>Choose Your Seat(s)</h2>
+                <p class="subtitle">Click on the seats below to select them from the interactive cabin layout</p>
+                
+                <div class="seat-selection-wrapper">
+                    <!-- Dynamic Bus Seat Layout Grid -->
+                    <div class="bus-layout-container">
+                        <div class="bus-cockpit">
+                            <i class="fas fa-steering-wheel"></i>
+                        </div>
+                        <div class="seat-grid">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Booking Summary Panel -->
+                    <div class="booking-summary-panel">
+                        <h3>Booking Summary</h3>
+                        
+                        <div class="seat-legend">
+                            <div class="legend-item">
+                                <div class="seat-sample"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat-sample selected"></div>
+                                <span>Selected</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat-sample booked"></div>
+                                <span>Booked</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-stats">
+                            <div class="stat-row">
+                                <span>Seat(s) Selected:</span>
+                                <span id="selected-seats-display">None</span>
+                            </div>
+                            <div class="stat-row total">
+                                <span>Total Price:</span>
+                                <span id="total-price-display">LKR 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-actions">
+                    <button class="btn btn-prev"><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button class="btn gradient-btn btn-next">Next Step <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 3: PASSENGER DETAILS -->
+            <div class="wizard-step">
+                <h2>Contact Information</h2>
+                <p class="subtitle">Please provide passenger details for ticket generation</p>
+                
+                <div class="wizard-grid-2">
+                    <div class="wizard-form-group">
+                        <label for="passenger-name">Passenger Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user-tag"></i>
+                            <input type="text" id="passenger-name" placeholder="Enter passenger name" required>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="passenger-email">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="passenger-email" placeholder="Enter email address" required>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="passenger-phone">Mobile Number</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                            <input type="tel" id="passenger-phone" placeholder="e.g. +94 7X XXX XXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="wizard-form-group">
+                        <label for="luggage-option">Luggage Quantity</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-suitcase"></i>
+                            <select id="luggage-option">
+                                <option value="Standard (Under 20kg)">Standard - Under 20kg (Free)</option>
+                                <option value="Medium (20kg - 30kg)">Medium - 20kg to 30kg (+LKR 500)</option>
+                                <option value="Excess (Over 30kg)">Excess - Over 30kg (+LKR 1,000)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-actions">
+                    <button class="btn btn-prev"><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button class="btn gradient-btn btn-next">Confirm Booking <i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 4: DIGITAL TICKET CONFIRMATION -->
+            <div class="wizard-step">
+                <h2>Booking Confirmed!</h2>
+                <p class="subtitle">Your digital boarding pass has been generated. Show it on your mobile device when boarding.</p>
+                
+                <div class="ticket-wrapper">
+                    <div class="digital-ticket">
+                        <div class="ticket-header">
+                            <div class="ticket-logo"><span>SASHI </span>Transit</div>
+                            <div class="ticket-badge">BOARDING PASS</div>
+                        </div>
+                        <div class="ticket-body">
+                            <div class="ticket-details">
+                                <div class="ticket-field">
+                                    <span>Passenger</span>
+                                    <span id="ticket-passenger-name">Dilani Silva</span>
+                                </div>
+                                <div class="ticket-field">
+                                    <span>Ticket ID</span>
+                                    <span id="ticket-id">SBT-582103</span>
+                                </div>
+                                <div class="ticket-field">
+                                    <span>Route</span>
+                                    <span id="ticket-route">Colombo ➔ Kandy</span>
+                                </div>
+                                <div class="ticket-field">
+                                    <span>Departure Date</span>
+                                    <span id="ticket-date">2026-06-15</span>
+                                </div>
+                                <div class="ticket-field">
+                                    <span>Bus Category</span>
+                                    <span id="ticket-bus-type">Luxury A/C Coach</span>
+                                </div>
+                                <div class="ticket-field">
+                                    <span>Seat Number(s)</span>
+                                    <span id="ticket-seats">15, 16</span>
+                                </div>
+                                <div class="ticket-field" style="grid-column: span 2; margin-top: 1rem;">
+                                    <span>Amount Paid</span>
+                                    <span id="ticket-amount" style="color: var(--MediumVioletRed); font-size: 2.2rem;">LKR 3,000</span>
+                                </div>
+                            </div>
+                            <div class="ticket-qr">
+                                <div class="qr-placeholder">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <span>SCAN TO BOARD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-actions" style="justify-content: center;">
+                    <a href="index.html" class="btn gradient-btn"><i class="fas fa-home"></i> Back to Home</a>
+                    <button class="btn btn-prev" onclick="window.print();" style="margin-left: 2rem;"><i class="fas fa-print"></i> Print Ticket</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+<!-- book section ends -->
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>vision</h3>
+            <p>Providing safe, comfortable, quick and efficient service to Passengers across Sri Lanka.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <p>Sri Lanka's best and safest bus service. Our sashi bus route service is located at 57/9, Mathugama.</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="book.html">book</a>
+            <a href="categories.html">categories</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+
+    <h1 class="credit"> created by <span> S.A.Sasindi Disanya </span> | all rights reserved! </h1>
+</section>
+
+<!-- Auto-fill from URL Query Params -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const fromParam = urlParams.get('from');
+        const toParam = urlParams.get('to');
+        
+        if (fromParam) {
+            const fromSelect = document.getElementById('from-location');
+            if (fromSelect) fromSelect.value = fromParam;
+        }
+        if (toParam) {
+            const toSelect = document.getElementById('to-location');
+            if (toSelect) toSelect.value = toParam;
+        }
+
+        // Set default date to tomorrow
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const dateInput = document.getElementById('departure-date');
+        if (dateInput) {
+            dateInput.value = tomorrow.toISOString().split('T')[0];
+            dateInput.min = new Date().toISOString().split('T')[0]; // Can't book past dates
+        }
+    });
+</script>
+<script src="./app.js"></script>
+</body>
+</html>

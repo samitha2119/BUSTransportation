@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Sashi Bus Transportation - Safe & Comfortable Journeys</title>
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><span>BUS </span>Transportation</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="book.html">book</a>
+        <a href="categories.html">categories</a>
+        <a href="services.html">services</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search routes or services...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!-- header section ends -->
+
+<!-- login form container  -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>passenger login</h3>
+        <input type="email" class="box" placeholder="enter your email" required>
+        <input type="password" class="box" placeholder="enter your password" required>
+        <input type="submit" value="login now" class="btn gradient-btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>welcome to Sashi Bus Transportation</h3>
+        <p>Providing the safest, quickest, and most comfortable bus journeys across Sri Lanka</p>
+        <a href="book.html" class="btn gradient-btn">BOOK TICKETS NOW</a>
+    </div>
+
+    <!-- Quick Booking Widget Overlay -->
+    <div class="booking-search-widget glass-panel">
+        <form action="book.html" method="GET">
+            <div class="inputBox">
+                <span>From</span>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="from-home" required>
+                        <option value="" disabled selected>Select Origin</option>
+                        <option value="Colombo">Colombo</option>
+                        <option value="Kandy">Kandy</option>
+                        <option value="Galle">Galle</option>
+                        <option value="Jaffna">Jaffna</option>
+                        <option value="Mathugama">Mathugama</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputBox">
+                <span>To</span>
+                <div>
+                    <i class="fas fa-map-marker"></i>
+                    <select id="to-home" required>
+                        <option value="" disabled selected>Select Destination</option>
+                        <option value="Colombo">Colombo</option>
+                        <option value="Kandy">Kandy</option>
+                        <option value="Galle">Galle</option>
+                        <option value="Jaffna">Jaffna</option>
+                        <option value="Mathugama">Mathugama</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputBox">
+                <span>Date</span>
+                <div>
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="date-home" required>
+                </div>
+            </div>
+            <div class="inputBox">
+                <button type="submit" class="btn gradient-btn"><i class="fas fa-search"></i> SEARCH</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- why choose us section starts -->
+<section class="why-us" id="why-us">
+    <div class="head">
+        <h1 class="heading">
+            <span>w</span>
+            <span>h</span>
+            <span>y</span>
+            <span class="space"></span>
+            <span>u</span>
+            <span>s</span>
+        </h1>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Maximum Safety</h3>
+            <p>Our fleet is strictly maintained under certified safety protocols. Backed by experienced professional drivers.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Punctuality Guaranteed</h3>
+            <p>We value your time. Our schedules are optimized to ensure on-time departures and arrivals, every single run.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-couch"></i>
+            <h3>Unmatched Comfort</h3>
+            <p>Modern luxury cabins with ergonomic seats, ambient lighting, dual TV entertainment, and fully operational climate systems.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Passenger Support</h3>
+            <p>Our customer service is always available to handle booking changes, queries, and passenger requirements.</p>
+        </div>
+    </div>
+</section>
+<!-- why choose us section ends -->
+
+<!-- popular routes section starts -->
+<section class="routes" id="routes">
+    <div class="head">
+        <h1 class="heading">
+            <span>p</span>
+            <span>o</span>
+            <span>p</span>
+            <span>u</span>
+            <span>l</span>
+            <span>a</span>
+            <span>r</span>
+            <span class="space"></span>
+            <span>r</span>
+            <span>o</span>
+            <span>u</span>
+            <span>t</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image-container">
+                <img src="images/p-1.jpg" alt="Kandy Route">
+            </div>
+            <span class="price-tag">LKR 1,500</span>
+            <div class="route-info">
+                <div class="route-title">
+                    <h3>Colombo ➔ Kandy</h3>
+                </div>
+                <div class="route-details">
+                    <span><i class="fas fa-bus"></i> Luxury A/C Coach</span>
+                    <span><i class="fas fa-clock"></i> Duration: 3.5 Hours</span>
+                    <span><i class="fas fa-road"></i> Via Central Expressway</span>
+                </div>
+                <a href="book.html?from=Colombo&to=Kandy" class="btn gradient-btn">Book Route</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/p-2.jpg" alt="Galle Route">
+            </div>
+            <span class="price-tag">LKR 1,200</span>
+            <div class="route-info">
+                <div class="route-title">
+                    <h3>Colombo ➔ Galle</h3>
+                </div>
+                <div class="route-details">
+                    <span><i class="fas fa-bus"></i> Luxury A/C Coach</span>
+                    <span><i class="fas fa-clock"></i> Duration: 2.0 Hours</span>
+                    <span><i class="fas fa-road"></i> Via Southern Expressway</span>
+                </div>
+                <a href="book.html?from=Colombo&to=Galle" class="btn gradient-btn">Book Route</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/p-3.jpg" alt="Jaffna Route">
+            </div>
+            <span class="price-tag">LKR 3,500</span>
+            <div class="route-info">
+                <div class="route-title">
+                    <h3>Colombo ➔ Jaffna</h3>
+                </div>
+                <div class="route-details">
+                    <span><i class="fas fa-bus"></i> Super Luxury Rosa Bus</span>
+                    <span><i class="fas fa-clock"></i> Duration: 7.5 Hours</span>
+                    <span><i class="fas fa-road"></i> Via A9 Highway</span>
+                </div>
+                <a href="book.html?from=Colombo&to=Jaffna" class="btn gradient-btn">Book Route</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- popular routes section ends -->
+
+<!-- review section starts  -->
+<section class="reviews" id="reviews">
+    <div class="head">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+            <span>s</span>
+        </h1>
+    </div>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="review-card">
+                    <p>"The Colombo-Kandy luxury coach was absolutely comfortable! Punctual, and the AC was perfect. Highly recommended."</p>
+                    <h3>Priyantha Perera</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review-card">
+                    <p>"Booking tickets online was super easy and fast. Selected my seat and got the digital ticket instantly. 10/10!"</p>
+                    <h3>Dilani Silva</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review-card">
+                    <p>"Very safe drivers. Travelled to Galle via the Expressway, and the ride was exceptionally smooth. Clean buses too."</p>
+                    <h3>Mahesh Fernando</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- review section ends -->
+
+<!-- faq section starts -->
+<section class="faq" id="faq">
+    <div class="head">
+        <h1 class="heading">
+            <span>f</span>
+            <span>a</span>
+            <span>q</span>
+            <span>s</span>
+        </h1>
+    </div>
+    <div class="faq-container">
+        <div class="box">
+            <div class="faq-header">
+                <h3>How do I book tickets online?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-content">
+                <p>Simply navigate to our Book page, enter your route and travel date, select your preferred seat(s) from the interactive map, fill in passenger details, and confirm to generate your digital ticket instantly.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="faq-header">
+                <h3>What is the luggage allowance policy?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-content">
+                <p>Passengers are allowed to bring up to 20kg of check-in luggage stored in the bus cargo compartment and 1 small hand-carry bag inside the cabin for free. Additional luggage fees may apply for overweight items.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="faq-header">
+                <h3>Are the buses equipped with Wifi and power outlets?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-content">
+                <p>Yes, all our Luxury A/C Coaches and Premium Rosa Minibuses are equipped with free high-speed passenger Wi-Fi and individual USB charging outlets at each seat.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="faq-header">
+                <h3>Can I change or cancel my booking?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-content">
+                <p>Yes, bookings can be cancelled or rescheduled up to 12 hours before the scheduled departure time through our customer support hotline or by logging into your passenger portal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- faq section ends -->
+
+<!-- brand section starts -->
+<section class="brand-container">
+    <div class="swiper brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/mobile.png" alt="Brand Logo 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/email.png" alt="Brand Logo 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/github.png" alt="Brand Logo 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/mobile.png" alt="Brand Logo 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/email.png" alt="Brand Logo 5">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- brand section ends -->
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>vision</h3>
+            <p>Providing safe, comfortable, quick and efficient service to Passengers across Sri Lanka.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <p>Sri Lanka's best and safest bus service. Our sashi bus route service is located at 57/9, Mathugama.</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="book.html">book</a>
+            <a href="categories.html">categories</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+
+    <h1 class="credit"> created by <span> S.A.Sasindi Disanya </span> | all rights reserved! </h1>
+</section>
+
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

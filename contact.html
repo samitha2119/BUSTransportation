@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Sashi Bus Transportation - Contact & Support</title>
+    <style>
+        .contact-layout-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            margin: 3rem 0;
+            align-items: start;
+        }
+        @media (max-width: 991px) {
+            .contact-layout-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><span>BUS </span>Transportation</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="book.html">book</a>
+        <a href="categories.html">categories</a>
+        <a href="services.html">services</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search routes or services...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!-- header section ends -->
+
+<!-- login form container  -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>passenger login</h3>
+        <input type="email" class="box" placeholder="enter your email" required>
+        <input type="password" class="box" placeholder="enter your password" required>
+        <input type="submit" value="login now" class="btn gradient-btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- contact section starts  -->
+<section class="contact" id="contact">
+    <div class="head">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+    </div>
+
+    <div class="contact-layout-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-items" style="width: 100%;">
+            <!-- Phone -->
+            <div class="item" style="width: 100%; margin: 0 0 2rem 0; padding: 2.5rem; display: flex; flex-direction: row; gap: 2rem; text-align: left; justify-content: flex-start;">
+                <div class="icon" style="margin: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(199, 21, 133, 0.1); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-phone-alt" style="font-size: 2.5rem; color: var(--MediumVioletRed);"></i>
+                </div>
+                <div class="contact-info">
+                    <h1 style="font-size: 2rem; color: #000330; font-weight: 600; margin-bottom: 0.5rem;">Phone Number</h1>
+                    <h2 style="font-size: 1.5rem; color: #666; font-weight: 500;">+94 76 553 1900</h2>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="item" style="width: 100%; margin: 0 0 2rem 0; padding: 2.5rem; display: flex; flex-direction: row; gap: 2rem; text-align: left; justify-content: flex-start;">
+                <div class="icon" style="margin: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(199, 21, 133, 0.1); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--MediumVioletRed);"></i>
+                </div>
+                <div class="contact-info">
+                    <h1 style="font-size: 2rem; color: #000330; font-weight: 600; margin-bottom: 0.5rem;">Email Support</h1>
+                    <h2 style="font-size: 1.5rem; color: #666; font-weight: 500; text-transform: none;">sasindidisanya400@gmail.com</h2>
+                    <h2 style="font-size: 1.5rem; color: #666; font-weight: 500; text-transform: none; margin-top: 0.3rem;">sasindidisanya10@gmail.com</h2>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="item" style="width: 100%; margin: 0; padding: 2.5rem; display: flex; flex-direction: row; gap: 2rem; text-align: left; justify-content: flex-start;">
+                <div class="icon" style="margin: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(199, 21, 133, 0.1); display: flex; align-items: center; justify-content: center;">
+                    <i class="fab fa-github" style="font-size: 2.8rem; color: var(--MediumVioletRed);"></i>
+                </div>
+                <div class="contact-info">
+                    <h1 style="font-size: 2rem; color: #000330; font-weight: 600; margin-bottom: 0.5rem;">Developer GitHub</h1>
+                    <h2 style="font-size: 1.5rem; color: #666; font-weight: 500; text-transform: none;">github.com/sasindiDD</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passenger Feedback Form -->
+        <div class="contact-form-panel">
+            <h3>Get In Touch</h3>
+            <p style="font-size: 1.5rem; color: #666; margin-bottom: 2.5rem; line-height: 1.6;">Have questions about schedules, routes, or custom bookings? Drop us a message, and our customer service team will get back to you within 24 hours.</p>
+            
+            <form onsubmit="alert('Thank you for contacting us! Your inquiry has been received.'); this.reset(); return false;">
+                <div class="form-grid">
+                    <div class="inputBox">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required style="text-transform: none;">
+                    </div>
+                    <div class="inputBox full-width">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" placeholder="What is this regarding?" required>
+                    </div>
+                    <div class="inputBox full-width">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" cols="30" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn gradient-btn" style="padding: 1.2rem 3rem;"><i class="fas fa-paper-plane" style="margin-right: 0.8rem;"></i> Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>vision</h3>
+            <p>Providing safe, comfortable, quick and efficient service to Passengers across Sri Lanka.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <p>Sri Lanka's best and safest bus service. Our sashi bus route service is located at 57/9, Mathugama.</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="book.html">book</a>
+            <a href="categories.html">categories</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+
+    <h1 class="credit"> created by <span> S.A.Sasindi Disanya </span> | all rights reserved! </h1>
+</section>
+
+<script src="./app.js"></script>
+</body>
+</html>
