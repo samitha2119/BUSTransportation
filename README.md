@@ -1,4 +1,4 @@
-# Sashi Bus Transportation Website
+#  Bus Transportation Website
 
 A premium, fully responsive, and highly interactive Bus Transportation agency website designed to provide passengers with a seamless online ticket booking experience. Built using HTML, CSS, JavaScript, and enhanced with modern web practices (like glassmorphism, responsive grids, and touch-ready swiper sliders).
 
